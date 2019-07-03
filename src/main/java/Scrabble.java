@@ -8,7 +8,6 @@ public class Scrabble {
 
     Scrabble(String word) {
         if(!checkWord(word)) throw new IllegalArgumentException("Word that you've entered is invalid!");
-        checkWord(word);
         assignPointValues();
         this.word = word.toUpperCase();
     }
@@ -54,5 +53,4 @@ public class Scrabble {
             pointValues.put(letter, value);
         }
     }
-
 }

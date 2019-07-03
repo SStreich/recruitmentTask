@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Scrabble {
@@ -31,7 +30,7 @@ public class Scrabble {
     private void assignPointValues() {
         this.pointValues = new HashMap<>();
 
-        char[] lettersFor1 = {'A', 'E', 'I', 'O', 'L', 'N', 'R', 'S', 'T'};
+        char[] lettersFor1 = {'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'};
         char[] lettersFor2 = {'D', 'G'};
         char[] lettersFor3 = { 'B', 'C', 'M', 'P'};
         char[] lettersFor4 = {'F','H', 'V','W','Y' };

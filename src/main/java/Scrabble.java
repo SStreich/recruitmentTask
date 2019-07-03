@@ -15,7 +15,9 @@ public class Scrabble {
 
     private boolean checkWord(String wordToCheck) {
         if(wordToCheck == null) return false;
-        if (wordToCheck.length() < 1) return false;
+        for (char letter: wordToCheck.toCharArray()) {
+            if(!Character.isLetter(letter)) return false;
+        }
             return true;
     }
 
